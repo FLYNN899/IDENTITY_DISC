@@ -1,4 +1,5 @@
 REM This payload uses current admin privelages to create a new user with admin privelages on the same account
+REM this is for the BashBunny, if you want it on the ducky then remove all <Q>
 REM when deployed this leaves potential to remote desktop and demote original user to standard and gain access 
 REM Author:FLYNN
 ATTACKMODE HID STORAGE 
